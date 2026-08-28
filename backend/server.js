@@ -4550,8 +4550,10 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-app.listen(3001, "127.0.0.1", () => {
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, "0.0.0.0", () => {
   console.log(
-    "SevaPath backend running on http://127.0.0.1:3001"
+    `SevaPath backend running on port ${PORT}`
   );
 });
