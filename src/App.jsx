@@ -674,7 +674,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://127.0.0.1:3001/api/find-path",
+        "https://savepath-backend.onrender.com/api/find-path",
         {
           method: "POST",
           headers: {
